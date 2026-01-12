@@ -16,7 +16,7 @@ fetch('js/json/g.json')
             setTimeout(() => {
                 const card = document.createElement('div');
                 card.className = 'game-card';
-                
+                //loads the images & game name
                 const img = document.createElement('img');
                 img.src = `img/games/${game.id}.webp`;
                 img.alt = game.name;
@@ -35,7 +35,7 @@ fetch('js/json/g.json')
                 });
                 
                 grid.appendChild(card);
-                
+                //actual loading part 
                 loaded++;
                 if (loaded < total) {
                     statusEl.textContent = `loading ${loaded}/${total} games...`;

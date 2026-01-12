@@ -11,7 +11,7 @@ const isTablet = () => {
     const isMediumScreen = window.innerWidth > 768 && window.innerWidth <= 1024;
     return isTabletDevice || isMediumScreen;
 };
-
+//detects if the user is on mobile or computer
 const mobile = isMobile();
 const tablet = isTablet();
 
@@ -44,7 +44,7 @@ if (mobile && !localStorage.getItem('mobilePopupShown')) {
         localStorage.setItem('mobilePopupShown', 'true');
     });
 }
-
+//shows users the mobile popup saying it changed to mobile for a better experience since computer layout would be ugly asl
 function applySetting(setting, isOn) {
     switch (setting) {
         case 'fullscreen':
@@ -62,7 +62,7 @@ function applySetting(setting, isOn) {
             break;
     }
 }
-
+//this just auto toggles on when mobile is detected
 function loadAllSettings() {
     const settings = ['fullscreen', 'reduceMotion', 'compactMode'];
     settings.forEach(setting => {
@@ -141,7 +141,7 @@ document.querySelectorAll('.toggle-switch').forEach(toggle => {
         applySetting(setting, isOn);
     });
 });
-
+//loads my json (& images) onto page using js/g.js for stability.
 const downloadBtn = document.getElementById('downloadData');
 if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
@@ -162,7 +162,7 @@ if (downloadBtn) {
         URL.revokeObjectURL(url);
     });
 }
-
+//data downloading, wont write a cmdcmt below but the code below is for loading the data
 const loadBtn = document.getElementById('loadData');
 const loadInput = document.getElementById('loadDataInput');
 if (loadBtn && loadInput) {
@@ -197,7 +197,7 @@ if (clearBtn) {
         }
     });
 }
-
+//clearing data
 function openGame(name, url) {
     const frame = document.createElement('div');
     frame.className = 'game-frame active';
@@ -229,7 +229,7 @@ function openGame(name, url) {
     }, 5000);
     document.body.appendChild(frame);
 }
-
+//iframing from /g/
 if (mobile) {
     window.addEventListener('orientationchange', () => setTimeout(() => window.scrollTo(0, 0), 100));
     let lastTouchEnd = 0;

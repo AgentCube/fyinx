@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
       updateFavicon(originalIcon);
     }
   });
+  //this is where if your out of tab it changes the favicon & title to google classroom
   function updateFavicon(url) {
     let link = document.querySelector("link[rel='icon']");
     if (!link) {

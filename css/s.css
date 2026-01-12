@@ -16,7 +16,7 @@
     background: #7cb342;
     border-radius: 4px;
 }
-
+/* changes the font based on os, as of writing this mac changes to apples default font */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Schoolbell', sans-serif;
     background: #0a0a0a;
