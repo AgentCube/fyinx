@@ -1,82 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Google Classroom helps teachers create, distribute, and grade assignments in a paperless way. Streamline education with easy class management and communication.">
-    <meta name="keywords" content="google classroom, online learning, education, teaching tools, classroom management, assignments, grading">
-    <meta name="author" content="Google">
-    <meta name="theme-color" content="#1a73e8">
-    <meta name="msapplication-TileColor" content="#1a73e8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fyinx</title>
-    <link rel="icon" type="image/png" href="n.png" id="favicon">
-    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/s.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMKR6TMF13"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YMKR6TMF13');
-    </script>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="container">
-                <h1 class="logo">fyinx</h1>
-                <nav>
-                    <a href="index.html" class="active">home</a>
-                    <a href="math.html">games</a>
-                    <a href="studying.html">settings</a>
-                </nav>
-            </div>
-        </header>
-        <main class="container">
-            <section class="intro">
-                <h2>fyinx</h2>
-                <p>feel <em>at ease</em> having fun</p>
-            </section>
-            <section class="discord">
-                <a href="https://discord.gg/R3tEtQVFaJ" target="_blank" rel="noopener noreferrer" class="discord-button">
-                    <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/discord.svg" alt="Discord" class="discord-icon">
-                    join fyinx
-                </a>
-            </section>
-            <section class="stats">
-                <div class="stat-box">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">working</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">availability</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number" id="deviceType">desktop</span>
-                    <span class="stat-label">your device</span>
-                </div>
-            </section>
-            <section class="featured">
-                <h3>featured games</h3>
-                <div class="featured-grid" id="featuredGames"></div>
-            </section>
-            <section class="info">
-                <div class="info-box">
-                    <h3>what is fyinx?</h3>
-                    <p>fyinx is the cleanest and best ubg, having fast speeds and many stuff to play</p>
-                </div>
-                <div class="info-box">
-                    <h3>why use it?</h3>
-                    <p>its 100% usable and lightweight meaning better and faster.</p>
-                </div>
-            </section>
-        </main>
-    </div>
-    <script src="js/t.js"></script>
-    <script src="js/a.js"></script>
-    <script type="text/javascript" src="//pl27970438.effectivegatecpm.com/d9/50/39/d9503972f866e79fd9f278e02d955a67.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en" data-theme="default" data-font="default"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>fyinx</title><link rel="icon" type="image/png" href="n.png" id="favicon"><link href="https://fonts.googleapis.com/css2?family=Schoolbell&family=Inter:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet"><style>
+:root{--p:#7cb342;--bg:#0a0a0a;--c:#111;--b:#222;--t:#eee;--d:#888}
+[data-theme="midnight"]{--p:#60a5fa;--bg:#020617;--c:#0f172a;--b:#1e293b}
+[data-theme="crimson"]{--p:#ef4444;--bg:#0f0505;--c:#1a0808;--b:#2d0f0f}
+[data-theme="slate"]{--p:#94a3b8;--bg:#0f172a;--c:#1e293b;--b:#334155}
+[data-theme="coffee"]{--p:#a1887f;--bg:#12100e;--c:#1c1917;--b:#2b2622}
+[data-theme="oled"]{--p:#fff;--bg:#000;--c:#000;--b:#333}
+[data-theme="amethyst"]{--p:#a855f7;--bg:#09040e;--c:#160924;--b:#2d124a}
+[data-font="default"]{font-family:'Schoolbell',cursive}[data-font="modern"]{font-family:'Inter',sans-serif}[data-font="mono"]{font-family:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--p)}
+body{background:var(--bg);color:var(--t);line-height:1.5;overflow-x:hidden}.container{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--b);padding:15px 0;z-index:100}
+header .container{display:flex;justify-content:space-between;align-items:center}.logo{font-size:18px;font-weight:600;color:var(--p)}
+nav{display:flex;gap:20px}nav a{color:var(--d);text-decoration:none;font-size:13px;cursor:pointer}nav a.active{color:var(--t)}
+.intro{padding:50px 0 30px;text-align:center}.intro h2{font-size:36px;margin-bottom:5px}.intro p{color:var(--d);font-size:15px}
+.main-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin:30px 0}
+.box{background:var(--c);border:1px solid var(--b);padding:20px;border-radius:8px}
+.box h3{font-size:14px;color:var(--p);text-transform:uppercase;margin-bottom:10px}
+.stats-row{display:flex;justify-content:space-between;border-bottom:1px solid var(--b);padding:8px 0}.stats-row:last-child{border-bottom:none}
+.games-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;padding-bottom:50px}
+.game-card{background:var(--c);border:1px solid var(--b);border-radius:6px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column}
+.game-card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#000;display:block;border-bottom:1px solid var(--b)}
+.game-card span{display:block;padding:10px 5px;font-size:11px;text-align:center;font-weight:500}
+body.compact .games-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+body.compact .game-card img{display:none}body.compact .game-card span{padding:15px 5px 15px}
+.settings-group{background:var(--c);border:1px solid var(--b);border-radius:8px;padding:20px;margin-bottom:15px}
+.setting-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--b)}
+.setting-row:last-child{border-bottom:none}select,button.action-btn,input.s-input{background:var(--bg);color:var(--t);border:1px solid var(--b);padding:6px 12px;border-radius:4px;font-size:12px;cursor:pointer}
+input.s-input{cursor:text;width:100px;text-align:right}button.danger{color:#ef4444}
+.game-frame{position:fixed;inset:0;background:var(--bg);z-index:1000;display:none;flex-direction:column}.game-frame.active{display:flex}
+.frame-header{padding:10px 20px;display:flex;justify-content:space-between;align-items:center;background:var(--c);border-bottom:1px solid var(--b)}
+.game-iframe-container{flex:1;position:relative}iframe{width:100%;height:100%;border:none}
+.loading-screen{position:absolute;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center}
+.loader{width:25px;height:25px;border:2px solid var(--b);border-top-color:var(--p);border-radius:50%;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}
+.page-section{display:none}.page-section.active{display:block}
+</style></head><body>
+<div class="wrapper"><header><div class="container"><h1 class="logo">fyinx</h1><nav><a onclick="showPage('home')" id="nav-home">home</a><a onclick="showPage('games')" id="nav-games">games</a><a onclick="showPage('settings')" id="nav-settings">settings</a></nav></div></header>
+<main class="container">
+<section id="home" class="page-section active"><div class="intro"><h2>fyinx</h2><p>clean, minimal, fast.</p></div>
+<div class="main-grid">
+<div class="box"><h3>system information</h3><div class="stats-row"><span>status</span><span style="color:var(--p)">online</span></div><div class="stats-row"><span>total library</span><span id="gameTotal">...</span></div><div class="stats-row"><span>device</span><span id="deviceTypeHome">...</span></div></div>
+</div>
+<h3>quick access</h3><div class="games-grid" id="featuredGames"></div></section>
+<section id="games" class="page-section"><div class="intro"><h2>library</h2><p id="gameStatus">loading...</p></div><div id="games-container" class="games-grid"></div></section>
+<section id="settings" class="page-section"><div class="intro"><h2>settings</h2></div>
+<div class="settings-group"><h3>visuals</h3>
+<div class="setting-row"><span>theme</span><select id="themeSelect"><option value="default">forest</option><option value="midnight">midnight</option><option value="crimson">crimson</option><option value="slate">slate</option><option value="coffee">coffee</option><option value="oled">oled</option><option value="amethyst">amethyst</option></select></div>
+<div class="setting-row"><span>font</span><select id="fontSelect"><option value="default">schoolbell</option><option value="modern">modern</option><option value="mono">monospace</option></select></div>
+<div class="setting-row"><span>compact mode</span><button class="action-btn" id="toggleCompact">disabled</button></div></div>
+<div class="settings-group"><h3>privacy</h3>
+<div class="setting-row"><span>panic key</span><input class="s-input" id="panicKey" placeholder="e.g. Escape" maxlength="10"></div>
+<div class="setting-row"><span>panic redirect</span><input class="s-input" id="panicUrl" placeholder="https://google.com"></div></div>
+<div class="settings-group"><h3>data</h3>
+<div class="setting-row"><span>export cloud</span><button class="action-btn" id="downloadData">save .json</button></div>
+<div class="setting-row"><span>wipe memory</span><button class="action-btn danger" id="clearData">reset site</button></div></div></section></main></div>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const originalTitle = document.title;
+    const originalIcon = "n.png";
+    document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+    document.title = "Home";
+    updateFavicon("img/i.ico");
+    } else {
+    document.title = originalTitle;
+    updateFavicon(originalIcon);
+    }
+    });
+//this is where if your out of tab it changes the favicon & title to google classroom
+    function updateFavicon(url) {
+        let link = document.querySelector("link[rel='icon']");
+        if (!link) {
+        link = document.createElement("link");
+        link.rel = "icon";
+        document.head.appendChild(link);
+        }
+        link.href = url;
+    }
+});
+const gamesData = [{"id":"10m","name":"10 minutes till dawn","url":"g/10m.html"},{"id":"1v1","name":"1v1.lol","url":"g/1v1.html"},{"id":"2048","name":"2048","url":"g/2048.html"},{"id":"andy","name":"andy apple farm","url":"g/andy.html"},{"id":"angry","name":"angry birds","url":"g/angry.html"},{"id":"bad","name":"bad parenting","url":"g/bad.html"},{"id":"bal","name":"balatro","url":"g/balatro/index.html"},{"id":"baldi","name":"baldis basics","url":"g/baldi.html"},{"id":"basket","name":"basket stars","url":"g/bas.html"},{"id":"bb","name":"baseball bros","url":"g/bb.html"},{"id":"bendy","name":"bendy and the ink machine","url":"g/bendy.html"},{"id":"bit","name":"bitlife","url":"g/bit.html"},{"id":"block","name":"block blast","url":"g/block.html"},{"id":"blox","name":"bloxorz","url":"g/blox.html"},{"id":"bm","name":"bloodmoney","url":"g/bm.html"},{"id":"buck","name":"buckshot roulette","url":"g/buck.html"},{"id":"burrito","name":"burrito bison","url":"g/burrito.html"},{"id":"cc2d","name":"crazy cattle 3d","url":"g/cc3d.html"},{"id":"clash","name":"clash of vikings","url":"g/clash.html"},{"id":"co09","name":"class of 09","url":"g/co09.html"},{"id":"cookie","name":"cookie clicker","url":"g/cookie.html"},{"id":"crossy","name":"crossy roads","url":"g/crossy.html"},{"id":"cup","name":"cuphead","url":"g/cup.html"},{"id":"cut","name":"cut the rope","url":"g/cut.html"},{"id":"dead","name":"deadplate","url":"g/dead.html"},{"id":"delta","name":"deltarune","url":"g/deltarune/index.html"},{"id":"deltra","name":"deltatraveler","url":"g/deltra.html"},{"id":"doge","name":"doge miner","url":"g/doge.html"},{"id":"donot","name":"do not take this cat home","url":"g/donot.html"},{"id":"doom","name":"doom","url":"g/doom.html"},{"id":"doom2","name":"doom 2","url":"g/doom2.html"},{"id":"drift","name":"drift hunters","url":"g/drift.html"},{"id":"drive","name":"drive mad","url":"g/drive.html"},{"id":"duck","name":"duck life 1","url":"g/duck.html"},{"id":"duck2","name":"duck life 2","url":"g/duck2.html"},{"id":"duck3","name":"duck life 3","url":"g/duck3.html"},{"id":"escape","name":"escape road","url":"g/escape.html"},{"id":"fallout","name":"fallout","url":"g/fallout.html"},{"id":"fb","name":"football bros","url":"g/fb.html"},{"id":"fnaf","name":"fnaf","url":"g/fnaf.html"},{"id":"fnf","name":"friday night funkin","url":"g/fnf.html"},{"id":"get","name":"getaway shootout","url":"g/get.html"},{"id":"granny","name":"granny","url":"g/granny.html"},{"id":"gun","name":"gun spin","url":"g/gun.html"},{"id":"half","name":"half life","url":"g/half.html"},{"id":"hk","name":"hollow knight","url":"g/hk.html"},{"id":"hlm","name":"hotline miami","url":"g/hlm.html"},{"id":"hook","name":"stickman hook","url":"g/hook.html"},{"id":"house","name":"house of hazards","url":"g/house.html"},{"id":"idle","name":"idle breakout","url":"g/idle.html"},{"id":"jet","name":"jetpack joyride","url":"g/jet.html"},{"id":"kind","name":"lacey","url":"g/kind.html"},{"id":"mc","name":"minecraft","url":"g/mc.html"},{"id":"moto","name":"moto x3m","url":"g/moto.html"},{"id":"nubby","name":"nubbys number factory","url":"g/nubby.html"},{"id":"omo","name":"omori","url":"g/omo.html"},{"id":"ovo","name":"ovo 1","url":"g/ovo.html"},{"id":"ovo2","name":"ovo 2","url":"g/ovo2.html"},{"id":"ovo3","name":"ovo 3","url":"g/ovo3.html"},{"id":"pizza","name":"pizza tower","url":"g/pizza.html"},{"id":"ppg","name":"people playground","url":"g/ppg.html"},{"id":"pvz","name":"plants vs zombies","url":"g/pvz.html"},{"id":"ragdoll","name":"ragdoll hit","url":"g/ragdoll.html"},{"id":"ragdoll2","name":"ragdoll archers","url":"g/ragdoll2.html"},{"id":"rap","name":"parappa the rapper","url":"g/rap.html"},{"id":"rb","name":"retro bowl","url":"g/rb.html"},{"id":"rbc","name":"retro bowl college","url":"g/rbc.html"},{"id":"repo","name":"r.e.p.o","url":"g/repo.html"},{"id":"rid1","name":"riddle school 1","url":"g/rid1.html"},{"id":"rid2","name":"riddle school 2","url":"g/rid2.html"},{"id":"rid3","name":"riddle school 3","url":"g/rid3.html"},{"id":"roof","name":"rooftop snipers","url":"g/roof.html"},{"id":"roof2","name":"rooftop snipers 2","url":"g/roof2.html"},{"id":"run","name":"run","url":"g/run.html"},{"id":"slime","name":"slime ranchers","url":"g/slime.html"},{"id":"slope","name":"slope","url":"g/slope.html"},{"id":"sm64","name":"super mario 64","url":"g/sm64.html"},{"id":"smash","name":"smash karts","url":"g/smash.html"},{"id":"snow","name":"snow rider 3d","url":"g/snow.html"},{"id":"sonic","name":"sonic mania","url":"g/sonic.html"},{"id":"space","name":"space waves","url":"g/space.html"},{"id":"subway","name":"subway surfers","url":"g/subway.html"},{"id":"superhot","name":"superhot","url":"g/superhot.html"},{"id":"tattle","name":"tattle tail","url":"g/tattle.html"},{"id":"tomb","name":"tomb of the mask","url":"g/tomb.html"},{"id":"tomo","name":"tomodachi collection","url":"g/tomo.html"},{"id":"ult","name":"ultrakill","url":"g/ult.html"},{"id":"und","name":"undertale","url":"g/undertale/undertale.html"},{"id":"undy","name":"undertale yellow","url":"g/undertale-yellow/index.html"},{"id":"webfishing","name":"webfishing","url":"g/webfishing.html"},{"id":"yandere","name":"yandere simulator","url":"g/yandere.html"}];
+const mobile = /android|iphone|ipod|iemobile/i.test(navigator.userAgent.toLowerCase()) || window.innerWidth <= 768;
+//detects if the user is on mobile or computer
+function showPage(id) {
+document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+const navItem = document.getElementById('nav-'+id);
+if(navItem) navItem.classList.add('active');
+window.scrollTo(0,0);
+}
+const renderGames = (containerId, data) => {
+    const grid = document.getElementById(containerId);
+    if (!grid) return; grid.innerHTML = '';
+//loads the games on a grid
+    data.forEach(g => {
+        const card = document.createElement('div');
+        card.className = 'game-card';
+//loads the images & game name
+        card.innerHTML = `<img src="img/games/${g.id}.webp" onerror="this.src='img/games/default.webp'"><span>${g.name}</span>`;
+        card.onclick = () => openGame(g.name, g.url);
+        grid.appendChild(card);
+    });
+};
+async function openGame(name, url) {
+    const frame = document.createElement('div');
+    frame.className = 'game-frame active';
+    frame.innerHTML = `<div class="frame-header"><span class="logo">${name}</span><div class="frame-controls"><button class="action-btn" id="dl">download</button><button class="action-btn" id="cl">close</button></div></div><div class="game-iframe-container"><div class="loading-screen"><div class="loader"></div></div><iframe src="${url}"></iframe></div>`;
+    frame.querySelector('#cl').onclick = () => frame.remove();
+    frame.querySelector('#dl').onclick = async () => {
+    try { const r = await fetch(url); const b = await r.blob(); const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(b), download: `${name.replace(/\s+/g,'_')}.html`}); a.click(); } catch(e) { window.open(url, '_blank'); }
+    };
+//iframing from /g/
+    const ifr = frame.querySelector('iframe');
+    ifr.onload = () => frame.querySelector('.loading-screen').style.display = 'none';
+    document.body.appendChild(frame);
+}
+const ts = document.getElementById('themeSelect'), fs = document.getElementById('fontSelect');
+ts.onchange = (e) => { document.documentElement.setAttribute('data-theme', e.target.value); localStorage.setItem('f-t', e.target.value); };
+fs.onchange = (e) => { document.documentElement.setAttribute('data-font', e.target.value); localStorage.setItem('f-f', e.target.value); };
+//this just auto toggles on when mobile is detected
+const compactBtn = document.getElementById('toggleCompact');
+compactBtn.onclick = () => {
+const isComp = document.body.classList.toggle('compact');
+compactBtn.textContent = isComp ? 'enabled' : 'disabled';
+localStorage.setItem('f-c', isComp);
+};
+//this handles the panic key redirect
+const pkInput = document.getElementById('panicKey'), puInput = document.getElementById('panicUrl');
+pkInput.onchange = (e) => localStorage.setItem('f-pk', e.target.value);
+puInput.onchange = (e) => localStorage.setItem('f-pu', e.target.value);
+window.onkeydown = (e) => { if(e.key === localStorage.getItem('f-pk')) window.location.href = localStorage.getItem('f-pu') || 'https://google.com'; };
+function init() {
+    const t = localStorage.getItem('f-t') || 'default', f = localStorage.getItem('f-f') || 'default', c = localStorage.getItem('f-c') === 'true';
+    const pk = localStorage.getItem('f-pk') || '', pu = localStorage.getItem('f-pu') || '';
+    document.documentElement.setAttribute('data-theme', t); document.documentElement.setAttribute('data-font', f);
+    if(c) { document.body.classList.add('compact'); compactBtn.textContent = 'enabled'; }
+    ts.value = t; fs.value = f; pkInput.value = pk; puInput.value = pu;
+    document.getElementById('deviceTypeHome').textContent = mobile ? 'mobile' : 'desktop';
+    document.getElementById('gameTotal').textContent = gamesData.length;
+    renderGames('featuredGames', gamesData.slice(0, 8));
+//findsmy games in my json file, loading them one by one.
+    renderGames('games-container', gamesData);
+//actual loading part
+    document.getElementById('gameStatus').textContent = `${gamesData.length} items ready`;
+}
+document.getElementById('clearData').onclick = () => { if(confirm('clear site data?')) { localStorage.clear(); location.reload(); } };
+//clearing data
+document.getElementById('downloadData').onclick = () => {
+    const b = new Blob([JSON.stringify(localStorage)], {type:'application/json'});
+    const a = Object.assign(document.createElement('a'), {href:URL.createObjectURL(b), download:'fyinx-data.json'});
+    a.click();
+};
+//data downloading, wont write a cmdcmt below but the code below is for loading the data
+init();
+</script></body></html>
